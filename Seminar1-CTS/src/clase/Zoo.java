@@ -30,5 +30,11 @@ public class Zoo {
 		}
 	}
 	
+	public void deplasareAnimale() {
+		for(Animal a : animale) {
+			a.merge();
+		}
+	}
+	
 	
 }

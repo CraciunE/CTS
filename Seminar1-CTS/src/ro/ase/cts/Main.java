@@ -22,6 +22,7 @@ public class Main {
 		zoo.AdaugareAnimal(g2);
 		
 		zoo.feedAnimals();
+		zoo.deplasareAnimale();
 		
 	}
 
