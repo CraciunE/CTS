@@ -9,10 +9,17 @@ import java.util.Scanner;
 import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.Student;
 
-public class ReaderStudents {
-	
-	public static List<Aplicant> readStudents(String file) throws FileNotFoundException, NumberFormatException {
-		Scanner input = new Scanner(new File(file));
+public class ReaderStudents extends ReaderAplicanti{
+
+	public ReaderStudents(String numeFisier) {
+		super(numeFisier);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public List<Aplicant> readAplicanti() throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(new File(super.numeFisier));
 		input.useDelimiter(",|\n");
 		List<Aplicant> studenti = new ArrayList<Aplicant>();
 
