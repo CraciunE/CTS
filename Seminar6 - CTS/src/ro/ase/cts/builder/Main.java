@@ -18,6 +18,12 @@ public class Main {
 		System.out.println(r4.toString());
 		System.out.println(r5.toString());
 		
+		BuilderRezervare2 rezervareBuilder2= new BuilderRezervare2();
+		rezervareBuilder2.setAreMancareInclusa(true).setAreBauturaInclusa(true).setAreScaunErgonomic(true);
+		Rezervare rezervare1= rezervareBuilder2.setCod(7).build();
+		Rezervare rezervare2= rezervareBuilder2.setCod(8).build();
+		System.out.println(rezervare1.toString());
+		System.out.println(rezervare2.toString());
 		
 	}
 
