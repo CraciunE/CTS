@@ -16,7 +16,7 @@ public class Main {
 		a2.adaugaSediu(f2);
 		a2.adaugaSediu(f3);
 		
-		a1.adaugaSediu(a1);
+		//a1.adaugaSediu(a2);
 		
 		a1.descriere();
 
